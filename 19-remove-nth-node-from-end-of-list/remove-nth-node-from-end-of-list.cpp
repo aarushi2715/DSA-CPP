@@ -19,15 +19,20 @@ public:
         
 
         //for dummy node we would have to move n+1 steps 
-        for(int i=0; i<=n; i++){
-            fast=fast->next;
-        }
+       for( int i=0; i<=n; i++){
+        fast = fast->next;
+       }
+       
         while(fast!=nullptr){
             slow = slow->next;
             fast = fast->next;
         }
+        
 
+        ListNode* delNode;
+        delNode = slow->next;
         slow->next = slow->next->next;
+        delete delNode;
         return dummy->next;
     }
 };
