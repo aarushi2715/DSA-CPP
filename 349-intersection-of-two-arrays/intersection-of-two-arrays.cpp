@@ -4,7 +4,9 @@ public:
         
         vector<int> ans;
         unordered_set<int> set;
-        int maxE = max(nums1.size(), nums2.size());
+        sort(nums1.begin(), nums1.end());
+        sort(nums2.begin(), nums2.end());
+   
         
         for( int i=0; i<nums1.size(); i++){
             
