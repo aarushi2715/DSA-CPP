@@ -28,3 +28,9 @@ public:
         
     }
 };
+
+/*For example, nums = [2, 3], k = 3:
+- At element 2, the prefix sum is 2. We store it.
+- At element 3, the prefix sum becomes 5.
+- need = 5 - 3 = 2. We find that earlier prefix sum of 2.
+- So the subarray [3] has sum 3.*/
