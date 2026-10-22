@@ -1,7 +1,23 @@
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-       int i= 0;
+      
+      int k =0;//writer pointer 
+      for( int i=0; i<nums.size(); i++){//comparing and reader pointer 
+        if( nums[i] != val){
+            nums[k] = nums[i];
+            k++;
+        }
+      }
+      return k;
+
+    }   
+        
+    
+};
+
+
+/* int i= 0;
        int j = nums.size()-1;
   
 
@@ -25,7 +41,4 @@ public:
        //i will have moved past all the valid elments and swapped all the invalid ones so i's current position will bw the answer no need to make another counter
        return i;
 
-    }   
-        
-    
-};
+ */      
