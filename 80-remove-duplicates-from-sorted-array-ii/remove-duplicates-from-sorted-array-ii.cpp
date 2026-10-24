@@ -14,6 +14,7 @@ public:
          }
 
        }
+       //can copy one array into anohter using this 
        nums = ans;
         return count;
     }
