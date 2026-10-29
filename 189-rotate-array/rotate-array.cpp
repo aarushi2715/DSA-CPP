@@ -4,8 +4,8 @@ public:
      int n = nums.size();
      k = k%n;
      reverse(nums.begin(), nums.end());
-     reverse(nums.begin(), nums.begin()+k);
-     reverse(nums.begin()+k, nums.end());
+     reverse(nums.begin(), nums.begin()+k);//begin +k first k
+     reverse(nums.begin()+k, nums.end());//begin+k to n  basically n-k
 
      
 
